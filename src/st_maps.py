@@ -192,7 +192,7 @@ def process_video(video_path, gt_path):
         video_path (str): Path to the video sample to process.
         gt_path (str): Path to the ground truth data for the video.
     """
-    print(f"\nProcessing {video_path.split('VIPL-HR-V1/')[-1]}")
+    print(f"\nProcessing {video_path}")
 
     # initialise RT-GENE model for face detection and landmark estimation, and U2-Net model for skin segmentation
     src_path = os.path.dirname(os.path.realpath(__file__))
